@@ -1,0 +1,130 @@
+.playaudio {
+  width: 100%;
+  height: 50px;
+}
+.playaudio .img-box {
+  display: flex;
+  background-color: white;
+}
+.playaudio .img-box .img-box1 {
+  flex: 1;
+  height: 50px;
+  margin-top: 5px;
+  text-align: center;
+}
+.playaudio .img-box .img-box1 img {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  vertical-align: center;
+  animation: animatio 10s linear 0s infinite;
+}
+.playaudio .img-box .img-box1 .run {
+  animation-play-state: running;
+}
+.playaudio .img-box .img-box1 .paused {
+  animation-play-state: paused;
+}
+.playaudio .img-box .name {
+  flex: 3;
+  margin-left: 5px;
+}
+.playaudio .img-box .name .songname {
+  margin-top: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  max-width: 190px;
+}
+.playaudio .img-box .name .arname {
+  margin-top: 3px;
+  color: #919191;
+  max-width: 190px;
+}
+.playaudio .img-box .img-box2 {
+  flex: 1;
+  margin: auto;
+  text-align: center;
+}
+.playaudio .img-box .img-box3 {
+  margin: auto;
+  flex: 1;
+  text-align: center;
+}
+.playaudio .img-box .img-box3 img {
+  width: 28px;
+  height: 28px;
+  display: inline-block;
+}
+.playaudio .playlist-box {
+  position: fixed;
+  right: 40px;
+  bottom: 30px;
+  transition: all 1s ;
+}
+.playaudio .playlist-box1 .playstate-box {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  display: flex;
+}
+.playaudio .playlist-box1 .playstate-box .playstate {
+  flex: 1;
+  display: flex;
+}
+.playaudio .playlist-box1 .playstate-box .playstate div {
+  height: 40px;
+  line-height: 40px;
+  margin-left: 10px;
+}
+.playaudio .playlist-box1 .playstate-box .playstate div:nth-of-type(1) {
+  margin-left: 30px;
+}
+.playaudio .playlist-box1 .close {
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #dd3c3c;
+  color: white;
+  font-size: 16px;
+}
+.shows {
+  animation: shows 0.5s linear 0s;
+  animation-fill-mode: forwards ;
+  display: block;
+}
+.hiddens {
+  animation: hiddens 0.5s linear 0s;
+  animation-fill-mode: forwards ;
+}
+@keyframes animatio {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes shows {
+  0% {
+    opacity: 0;
+    bottom: -200px;
+  }
+  100% {
+    opacity: 1;
+    bottom: 30px;
+  }
+}
+@keyframes hiddens {
+  0% {
+    opacity: 1;
+    bottom: 30px;
+  }
+  100% {
+    opacity: 0;
+    bottom: -200px;
+  }
+}

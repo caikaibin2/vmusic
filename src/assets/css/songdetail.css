@@ -1,0 +1,188 @@
+.songdetail {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  transition: all 1s;
+  background-color: black;
+  z-index: 911;
+}
+.songdetail .backgroundimage {
+  width: 100%;
+  height: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  filter: blur(20px) brightness(40%);
+  transition: all 0.5s;
+}
+.songdetail .songdetail-box {
+  width: 100%;
+  height: 100%;
+  z-index: 200;
+}
+.songdetail .songdetail-box .top {
+  display: flex;
+  width: 100%;
+  height: 60px;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.songdetail .songdetail-box .top .img-box {
+  width: 40px;
+  height: 40px;
+  margin-top: 15px;
+  margin-left: 10px;
+  text-align: center;
+  line-height: 40px;
+}
+.songdetail .songdetail-box .top .name {
+  color: white;
+  width: 285px;
+  height: 100%;
+  text-align: center;
+}
+.songdetail .songdetail-box .top .name .songname {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+.songdetail .songdetail-box .top .name .arname {
+  margin-top: 5px;
+  color: silver;
+}
+.songdetail .songdetail-box .center {
+  width: 100%;
+  height: 477px;
+  position: relative;
+}
+.songdetail .songdetail-box .center .playLyric {
+  position: absolute;
+  top: 195px;
+  left: 20px;
+}
+.songdetail .songdetail-box .center .img-box {
+  width: 230px;
+  height: 230px;
+  overflow: hidden;
+  position: absolute;
+  top: 123px;
+  left: 73px;
+  transition: left 0.5s;
+}
+.songdetail .songdetail-box .center .img-box img {
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  animation: rotate 20s linear 0s infinite forwards;
+}
+.songdetail .songdetail-box .center .img-box img.run {
+  animation-play-state: running;
+}
+.songdetail .songdetail-box .center .img-box img.stop {
+  animation-play-state: paused;
+}
+.songdetail .songdetail-box .center .lyric-box {
+  width: 80vw;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 110vw;
+  transition: left 0.5s;
+}
+.songdetail .songdetail-box .center .lyric-box .lyric {
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.songdetail .songdetail-box .center .lyric-box .lyric .ul {
+  width: 100%;
+  transition: all 0.4s;
+}
+.songdetail .songdetail-box .center .lyric-box .lyric .ul li {
+  width: 100%;
+  min-height: 40px;
+  text-align: center;
+  line-height: 40px;
+  font-size: 16px;
+  color: silver;
+  transition: all 0.4s;
+}
+.songdetail .songdetail-box .center .lyric-box .lyric .ul .active {
+  color: white;
+  font-weight: bold;
+}
+.songdetail .songdetail-box .bottom {
+  color: white;
+  width: 100%;
+  height: 130px;
+  position: relative;
+}
+.songdetail .songdetail-box .bottom .order {
+  position: absolute;
+  top: -30px;
+  left: 149px;
+  width: 80px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  border: #e6e6e6 1px solid;
+  border-radius: 20px;
+  color: #e6e6e6;
+  padding: 5px;
+  transition: all 2s;
+}
+.songdetail .songdetail-box .bottom .progress-box {
+  width: 90%;
+  height: 40px;
+  margin: 0 auto;
+  display: flex;
+}
+.songdetail .songdetail-box .bottom .progress-box .current {
+  width: 49px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+}
+.songdetail .songdetail-box .bottom .progress-box .progress {
+  width: 240px;
+  height: 40px;
+}
+.songdetail .songdetail-box .bottom .progress-box .progress .copy {
+  margin-top: 20px;
+  padding: 0 10px;
+}
+.songdetail .songdetail-box .bottom .progress-box .progress .copy .custom-button {
+  width: 3px;
+  height: 3px;
+  border: 5px solid white;
+  font-size: 10px;
+  line-height: 18px;
+  text-align: center;
+  background-color: #ee0a24;
+  border-radius: 100px;
+}
+.songdetail .songdetail-box .bottom .five-img {
+  width: 90%;
+  height: 90px;
+  margin: 0 auto;
+  display: flex;
+}
+.songdetail .songdetail-box .bottom .five-img div {
+  flex: 1;
+  text-align: center;
+  line-height: 90px;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,140 @@
+.home {
+  background-color: #f2f3f5;
+  position: relative;
+}
+.home .lefts .bigbox {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.home .lefts .bigbox .login {
+  width: 100%;
+  height: 60px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+}
+.home .lefts .bigbox .login .img-box {
+  width: 40px;
+  height: 40px;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+.home .lefts .bigbox .login .img-box img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.home .lefts .bigbox .login .name {
+  height: 60px;
+  max-width: 320px;
+  line-height: 60px;
+  font-size: 16px;
+  margin-left: 10px;
+}
+.home .lefts .bigbox .login .name span {
+  font-size: 18px;
+  margin-left: 10px;
+}
+.home .lefts .bigbox .content {
+  padding-top: 60px;
+}
+.home .lefts .bigbox .content .box {
+  width: 100%;
+  height: calc(100%-120px);
+}
+.home .lefts .bigbox .content .box .item {
+  display: flex;
+  width: 90%;
+  height: 60px;
+  line-height: 60px;
+  margin: 0 auto;
+}
+.home .lefts .bigbox .content .box .item .img-box {
+  line-height: 60px;
+}
+.home .lefts .bigbox .content .box .item .img-box img {
+  width: 26px;
+  height: 26px;
+  vertical-align: middle;
+}
+.home .lefts .bigbox .content .box .item .text {
+  flex: 1;
+  padding-left: 20px;
+  font-size: 16px;
+}
+.home .lefts .bigbox .content .box .item .right-img {
+  margin-left: auto;
+}
+.home .lefts .bigbox .content .box .item .right-img img {
+  vertical-align: middle;
+}
+.home .lefts .bigbox .logOut {
+  width: 200px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  font-size: 18px;
+  color: red;
+  position: absolute;
+  bottom: 20px;
+  left: 30px;
+  background-color: #ececec;
+  border-radius: 10px;
+}
+.home .top {
+  width: 100%;
+  height: 100px;
+  background-color: #d44439;
+}
+.home .top .vmuisc {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  text-align: center;
+  line-height: 40px;
+}
+.home .top .vmuisc .left {
+  flex: 1;
+}
+.home .top .vmuisc .left img {
+  width: 25px;
+  height: 25px;
+  vertical-align: middle;
+}
+.home .top .vmuisc .center {
+  flex: 5;
+  font-size: 20px;
+  color: #e6e6e6;
+  font-weight: bold;
+  letter-spacing: 5px;
+}
+.home .top .vmuisc .right {
+  flex: 1;
+}
+.home .top .vmuisc .right img {
+  width: 25px;
+  height: 25px;
+  vertical-align: middle;
+}
+.home .top .jump-box {
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  display: flex;
+  text-align: center;
+  font-size: 16px;
+}
+.home .top .jump-box a {
+  color: #e6e6e6;
+  transition: all 0.8s;
+}
+.home .top .jump-box div {
+  flex: 1;
+}
+.home .top .jump-box .active {
+  font-weight: bold;
+  padding-bottom: 5px;
+  border-bottom: 3px #e6e6ee solid;
+}

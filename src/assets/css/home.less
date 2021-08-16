@@ -1,0 +1,154 @@
+.home {
+  background-color: rgb(242, 243, 245);
+  position: relative;
+  .lefts {
+    // position: absolute;
+    // top: 0;
+    // left: 0;
+    // width: 50%;
+    // height: 100vh;
+    // background-color: white;
+    // transition: left 0.6s;
+    // z-index: 990;
+    .bigbox {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      .login {
+        width: 100%;
+        height: 60px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        .img-box {
+          width: 40px;
+          height: 40px;
+          margin-left: 10px;
+          margin-top: 10px;
+          img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+          }
+        }
+        .name {
+          height: 60px;
+          // width: 60px;
+          max-width: 320px;
+          line-height: 60px;
+          font-size: 16px;
+          margin-left: 10px;
+          span{
+            font-size: 18px;
+            // font-weight: bold;
+            margin-left: 10px;
+          }
+        }
+      }
+      .content{
+        padding-top: 60px;
+        .box{
+          width: 100%;
+          height: calc(100%-120px);
+          .item{
+            display: flex;
+            width: 90%;
+            height: 60px;
+            line-height: 60px;
+            margin: 0 auto;
+            .img-box{
+
+              line-height: 60px;
+              img{
+                width: 26px;
+                height: 26px;
+                vertical-align: middle;
+              }
+            }
+            .text{
+              flex: 1;
+              padding-left: 20px;
+              font-size: 16px;
+              // font-weight: bold;
+            }
+            .right-img{
+              margin-left: auto;
+              img{
+                vertical-align: middle;
+              }
+            }
+          }
+        }
+      }
+      .logOut{
+        width: 200px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        font-size: 18px;
+        color: red;
+        position: absolute;
+        bottom: 20px;
+        left: 30px;
+        background-color: rgb(236, 236, 236);
+        border-radius: 10px;
+      }
+    }
+  }
+  .top {
+    width: 100%;
+    height: 100px;
+    background-color: rgb(212, 68, 57);
+    .vmuisc {
+      width: 100%;
+      height: 40px;
+      display: flex;
+      text-align: center;
+      line-height: 40px;
+      .left {
+        flex: 1;
+        img {
+          width: 25px;
+          height: 25px;
+          vertical-align: middle;
+        }
+      }
+      .center {
+        flex: 5;
+        font-size: 20px;
+        color: #e6e6e6;
+        font-weight: bold;
+        letter-spacing: 5px;
+      }
+      .right {
+        flex: 1;
+        img {
+          width: 25px;
+          height: 25px;
+          vertical-align: middle;
+        }
+      }
+    }
+    .jump-box {
+      width: 100%;
+      height: 60px;
+      line-height: 60px;
+      display: flex;
+      text-align: center;
+      font-size: 16px;
+      a {
+        color: #e6e6e6;
+        transition: all 0.8s;
+      }
+      div {
+        flex: 1;
+      }
+      .active {
+        font-weight: bold;
+        padding-bottom: 5px;
+        border-bottom: 3px #e6e6ee solid;
+      }
+    }
+  }
+}

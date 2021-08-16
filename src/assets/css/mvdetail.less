@@ -1,0 +1,171 @@
+.mvdetail {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  .top {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    text-align: center;
+    line-height: 50px;
+    background-color: red;
+    .img-box {
+      width: 50px;
+      height: 50px;
+      margin-top: 10px;
+    }
+    .name {
+      width: 290px;
+      height: 60px;
+      line-height: 20px;
+      text-align: center;
+      .mvname {
+        color: white;
+        font-size: 16px;
+        font-weight: bold;
+      }
+      .arname {
+        color: rgb(228, 226, 226);
+        margin-top: 8px;
+        font-size: 14px;
+      }
+    }
+  }
+  .video {
+    width: 100%;
+    height: 200px;
+    background-color: black;
+    video {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .type {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    div {
+      flex: 1;
+      text-align: center;
+      line-height: 40px;
+      font-size: 16px;
+      margin: 0 auto;
+      .similar {
+        //    text-align:center;
+        width: 70px;
+      }
+      .comment {
+        width: 40px;
+      }
+      .active {
+        border-bottom: red 3px solid;
+        font-size: 18px;
+        font-weight: bold;
+      }
+    }
+  }
+  .type-content {
+    width: 90%;
+    height: 280px;
+    margin: 0 auto;
+    position: relative;
+    .similarMv {
+      width: 100%;
+      height: 360px;
+      position: absolute;
+      top: 5px;
+      transition: left 0.5s;
+      overflow: auto;
+      display: flex;
+      flex-wrap: wrap;
+      .similarMv-box {
+        width: 30%;
+        height: 150px;
+        margin-left: 10px;
+
+        .img-box {
+          margin-left: 10px;
+          &:nth-of-type(3n + 1) {
+            margin-left: 0px;
+          }
+          img {
+            width: 100px;
+            height: 100px;
+            border-radius: 10px;
+          }
+        }
+      }
+    }
+    .comment {
+      width: 100%;
+      height: 360px;
+      overflow: auto;
+      position: fixed;
+      top: 290px;
+      left: 110vw;
+      transition: left 0.5s;
+      .comment-item {
+          width: 320px;
+          padding: 5px;
+          border-radius: 10px;
+          border: silver 1px solid;
+          margin-top: 5px;
+        .people {
+          display: flex;
+          width: 100%;
+          height: 40px;
+          .img-box {
+            width: 40px;
+            height: 40px;
+            img {
+              width: 100%;
+              height: 100%;
+              border-radius: 50%;
+            }
+          }
+          .nickname {
+            width: 200px;
+            height: 40px;
+            margin-left: 10px;
+            // text-align: center;
+            line-height: 40px;
+            font-size: 16px;
+            color: silver;
+          }
+        }
+        .content {
+          width: calc(100%-40px);
+          margin: 10px 0 0 40px;
+        }
+        .time-operation{
+            display: flex;
+            margin: 20px 0 0 40px;
+            .time{
+                flex: 2;
+                line-height: 50px;
+            }
+            .operation{
+                flex: 1;
+                display: flex;
+                text-align: center;
+                line-height: 40px;
+                div{
+                    flex: 1;
+                    img{
+                        width: 20px;
+                        height: 20px;
+                    }
+                    .number{
+                        line-height: 0px;
+                    }
+                }
+                // .fabulous{
+
+                // }
+            }
+        }
+      }
+    }
+  }
+}

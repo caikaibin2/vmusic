@@ -1,0 +1,195 @@
+.top {
+  width: 100%;
+  height: 240px;
+  background-size: 100%;
+  position: relative;
+}
+.top .type {
+  width: 100%;
+  height: 32px;
+  line-height: 32px;
+  display: flex;
+}
+.top .type .singer span {
+  margin-top: 6px;
+  text-align: center;
+  color: #cdcdcd;
+  font-size: 16px;
+}
+.top .text-playcount {
+  position: absolute;
+  left: 20px;
+  top: 170px;
+  color: #ffffff;
+}
+.top .text-playcount .text {
+  font-size: 18px;
+  font-weight: bolder;
+}
+.top .text-playcount .playcount {
+  display: flex;
+  height: 20px;
+}
+.top .text-playcount .playcount img {
+  width: 20px;
+  height: 20px;
+  display: block;
+}
+.top .text-playcount .playcount p {
+  height: 20px;
+  line-height: 20px;
+  margin-top: 2px;
+}
+.songList-box {
+  position: relative;
+  top: -7px;
+}
+.songList-box .top-label {
+  width: 100%;
+  height: 32px;
+  margin: 0 auto;
+  display: flex;
+  background-color: white;
+  border-radius: 8px;
+  border-bottom: 1px solid #e7e7e7;
+  padding: 5px 0;
+}
+.songList-box .top-label .img-box {
+  height: 40px;
+  vertical-align: middle;
+  margin-left: 10px;
+}
+.songList-box .top-label .playall {
+  height: 32px;
+  line-height: 32px;
+  padding-left: 10px;
+  font-size: 16px;
+}
+.songList-box .top-label .playall span {
+  font-size: 14px;
+  color: silver;
+  margin-left: 5px;
+}
+.songList-box .songlist {
+  overflow: auto;
+  height: 326px;
+  padding-bottom: 5px;
+  width: 100%;
+}
+.songList-box .songlist .song {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  border-bottom: 1px solid #e7e7e7;
+}
+.songList-box .songlist .song .sort {
+  width: 60px !important;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+}
+.songList-box .songlist .song .name {
+  width: 260px;
+}
+.songList-box .songlist .song .name .songname {
+  margin-top: 10px;
+  margin-left: 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+.songList-box .songlist .song .name .arname {
+  margin-top: 10px;
+  margin-left: 10px;
+  color: silver;
+}
+.songList-box .songlist .song .playing1 {
+  width: 60px;
+  height: 100%;
+  text-align: center;
+  line-height: 60px;
+}
+.songList-box .songlist .song .playing1 img {
+  vertical-align: middle;
+  width: 40px;
+  height: 40px;
+}
+.songList-box .songlist .song .playing {
+  width: 60px;
+  height: 100%;
+  display: flex;
+  transform: rotate(180deg);
+  margin-right: 10px;
+}
+.songList-box .songlist .song .playing div {
+  width: 8px;
+  height: 40px;
+  margin-left: 4px;
+  margin-top: 10px;
+  background-color: red;
+}
+.songList-box .songlist .song .playing .run {
+  animation-play-state: running !important;
+}
+.songList-box .songlist .song .playing .paused {
+  animation-play-state: paused !important;
+}
+.songList-box .songlist .song .playing .one {
+  animation: one 1s linear 0s infinite;
+}
+.songList-box .songlist .song .playing .two {
+  animation: two 1s linear 0.3s infinite;
+}
+.songList-box .songlist .song .playing .three {
+  animation: three 1s linear 0.7s infinite;
+}
+@keyframes one {
+  0% {
+    height: 0px;
+  }
+  25% {
+    height: 20px;
+  }
+  50% {
+    height: 40px;
+  }
+  75% {
+    height: 20px;
+  }
+  100% {
+    height: 0px;
+  }
+}
+@keyframes two {
+  0% {
+    height: 0px;
+  }
+  25% {
+    height: 20px;
+  }
+  50% {
+    height: 40px;
+  }
+  75% {
+    height: 20px;
+  }
+  100% {
+    height: 0px;
+  }
+}
+@keyframes three {
+  0% {
+    height: 0px;
+  }
+  25% {
+    height: 20px;
+  }
+  50% {
+    height: 40px;
+  }
+  75% {
+    height: 20px;
+  }
+  100% {
+    height: 0px;
+  }
+}
